@@ -1,5 +1,16 @@
 #include <stdio.h>
 
+/*
+PLEASE NOTE
+I compiled TwoDGame.exe using Microsoft's C++ compiler. As a result,
+even if no arguments are passed in, argc defaults to a value of 1,
+and args contains a single character, leading to a 'Please enter valid command'
+line after running, essentially always running with arguments. This is expected
+behaviour for Microsoft's C++ compiler. Recompiling with GCC or another compiler
+fixes this, or the first argument could be ignored. Beyond the inital argument,
+the code runs fully to my knowledge.
+*/
+
 int main(int argc, char *args[]) {
 
     //Create the array to represent the map
